@@ -1,0 +1,14 @@
+{
+    "App_Url": "https://playwright.dev/docs/intro",
+    "browserName": "Chromium",
+    "Head_Less_Run": "No",
+    "Parallel_Execution": "No",
+    "Workers": 1,
+    "Test_Execution_Timeout": "500000",
+    "Action_TimeOut": "30000",
+    "Except_Timeout": "30000",
+    "Trace_Report": "on",
+    "Execution_Vedio": "on",
+    "Screenshot": "on",
+    "Retry_Failure": 0
+}

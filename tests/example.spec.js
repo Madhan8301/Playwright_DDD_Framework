@@ -1,19 +1,30 @@
-// @ts-check
-import { test, expect } from '@playwright/test';
+import { test, expect, beforeEach } from '@playwright/test';
+import ConfigFile from '../Hooks/config.json';
+import hooks from '../Hooks/Hooks';
 
-test('has title', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
+const actionClass = require('../ActionClass/ActionClass');
+const Wcontrol = require('../PageControls/WebControl');
 
-  // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/);
+beforeEach(async () => {
+	await hooks.setup(ConfigFile);
+	await Wcontrol.OpenUrl(ConfigFile.App_Url);
 });
 
-test('get started link', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
-
-  // Click the get started link.
-  await page.getByRole('link', { name: 'Get started' }).click();
-
-  // Expects page to have a heading with the name of Installation.
-  await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
+test("Launch Playwright Application", async ({ }) => {
+	await actionClass.LoginToApplication();
+	await actionClass.SelectOriginDestination();
 });
+
+test("Launch Playwright Application", async ({ }) => {
+	await actionClass.LoginToApplication();
+});
+
+test("Launch Playwright Application", async ({ }) => {
+	await actionClass.LoginToApplication();
+});
+
+test("Launch Playwright Application", async ({ }) => {
+	await actionClass.LoginToApplication();
+});
+
+
