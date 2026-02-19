@@ -1,0 +1,23 @@
+{
+  "name": "playwright_ddd_framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Madhan8301/Playwright_DDD_Framework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Madhan8301/Playwright_DDD_Framework/issues"
+  },
+  "homepage": "https://github.com/Madhan8301/Playwright_DDD_Framework#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.3.0"
+  }
+}
